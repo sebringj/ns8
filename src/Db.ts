@@ -34,7 +34,7 @@ class DB {
     }
 
     public static userExists(email: string) {
-        const foundUser = this.users.find(u => u.email === email)
+        const foundUser = this.users.find(u => u.email.toLowerCase() === email.toLowerCase())
         return !!foundUser
     }
 
