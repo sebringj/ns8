@@ -22,3 +22,12 @@ To run this project first you need to run following command
 ## License
 
 ???
+
+## Future considerations
+
+- Obviously this is a toy
+- needs ssl
+- should have some token-based auth (passport?)
+- could have signing urls etc etc
+- needs some db and using async calls etc
+- pretty much depends on requirement but currently there isn't much there
