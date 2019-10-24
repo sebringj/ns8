@@ -1,13 +1,14 @@
 import * as dotenv from 'dotenv';
 import express from 'express';
-import ExpressRotuer from './express.router';
+import router from './router';
 
 dotenv.config();
 
 const app = express();
-const expressRoutes = new ExpressRotuer(app);
-expressRoutes.init();
+router(app);
 
-app.listen(process.env.PORT, () => {
-  console.log(`Express server app listening on port ${process.env.PORT}!`);
+const port = process.env.PORT || 3000
+
+app.listen(port, () => {
+  console.log(`Express server app listening on port ${port}!`);
 });

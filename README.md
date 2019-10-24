@@ -1,6 +1,8 @@
-# A minimal web application structure with technologies like node.js, typescript, express
+# Lil' ns8 user / event server
 
-This project is created to help people who wants to start creating application with the TypeScript, Node.js and Express.
+This is was from a starter typescript/node project https://github.com/JalpeshVadgama/minimum-nodejs-typescript-express" because that's not fun to do. My philosophy is only do what you need to do at least for this scenario and no db is needed as you already indicated so the data dies when the server dies.
+
+- mocha was not added because this was not a requirement
 
 ## How to run this project:
 
@@ -8,18 +10,15 @@ To run this project first you need to run following command
 
 ```sh
     npm install          <= install all the npm Dependencies
-    npm start            <= It will run project on port 8000.
+    npm start            <= It will run on port 3000 if PORT not defined
 ```
 
-## Directory strcture of project:
+## Routes
 
-* app.ts - Typescript file for creating express application class and where we have initialized the application.
-* routes.ts - Typescript files for creating all the routes under Init() Method.
-* package.json - Contains all the packages and dev dependencies required for this application. You can add more as your requirement..
-* tsconfig.json - Where all the typescript configuration is there and we converting typescript into ES5..
-* Controller Folder - Contains all the classes for the controller of the express application.
-* tsconfig.json - Contains all the rules for TypeScript linting.
+* /users (post) creates a user
+* /events (post) creates event
+* /events (get) list events
 
 ## License
 
-MIT
+???
